@@ -1,0 +1,36 @@
+{
+  "name": "cathshield-ai",
+  "version": "1.0.0",
+  "description": "Hospital-grade medical safety web app for central line management",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:setup": "psql -f scripts/setup.sql"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "axios": "^1.6.0",
+    "recharts": "^2.10.0",
+    "date-fns": "^2.30.0",
+    "pg": "^8.11.0",
+    "dotenv": "^16.3.0",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^14.0.0"
+  }
+}

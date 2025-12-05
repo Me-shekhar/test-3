@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom right, #f0f9ff, #f0fdf4);
+}
+
+/* Custom utility classes */
+.text-clinical-large {
+  font-size: 1.25rem;
+}
+
+.text-clinical-xl {
+  font-size: 1.5rem;
+}
+
+.bg-medical-gradient {
+  background: linear-gradient(135deg, #008B8B 0%, #0066CC 100%);
+}
+
+/* Ensure audio controls are readable */
+audio::-webkit-media-controls-enclosure {
+  background-color: white;
+  border-radius: 4px;
+}
+
+/* Ensure checkboxes are accessible */
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+input[type='checkbox']:disabled {
+  cursor: not-allowed;
+}
+
+/* Responsive text sizes */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+}
