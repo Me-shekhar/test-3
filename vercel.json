@@ -1,0 +1,6 @@
+{
+  "monorepos": false,
+  "buildCommand": "cd cathshield && npm run build",
+  "installCommand": "cd cathshield && npm install",
+  "devCommand": "cd cathshield && npm run dev"
+}
